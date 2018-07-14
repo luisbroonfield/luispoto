@@ -1,0 +1,26 @@
+public class OperacionesBasicas {
+public static void main(String[] args) {
+//Declaramos las variables Numericas
+intnumero1=4;
+intnumero2=2;
+int suma = 0;
+int resta = 0;
+intdivision=0;
+intmodulo=0;
+//Declaramos las variables tipo texto
+String Suma = "La suma es:";
+String Resta = "La resta es:";
+StringDivision="Ladivisiones:";
+StringModulo="ElModuloes:";
+//hacemos las operaciones
+suma = numero1 + numero2;
+resta = numero1 - numero2;
+division=numero1/numero2;
+modulo = numero1 % numero2;
+//imprimir en consola
+System.out.println(Suma + suma);
+System.out.println(Resta + resta);
+System.out.println(Division + division);
+System.out.println(Modulo + modulo);
+}
+}
