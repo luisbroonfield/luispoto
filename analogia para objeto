@@ -1,0 +1,56 @@
+public class Main {
+public static void main(String[] args) {
+ //Creando el objeto Auto
+ Auto Auto = new Auto();
+ Auto.setCompania("Toyota");
+ Auto.setMarca("Corolla");
+ Auto.setPlaca ("PDI-2345");
+ Auto.setModelo (2018);// se ingresa el anno para ver q modelo es.
+System.out.println("Compania: " + Auto.getCompania() );
+System.out.println("Marca: " + Auto.getMarca() );
+System.out.println("Placa: " + Auto.getPlaca() );
+System.out.println("Modelo: " + Auto.getModelo() );
+}
+public static class Auto{
+//Private hace que los atributos sean accedidos dentro de la clase
+ private String Compania;
+ private String Marca;
+ private String Placa;
+ private String Modelo;
+ //Métodos públicos para acceder a los datos
+ public String getCompania(){
+ return Compania;
+ }
+ public String getMarca(){
+ return Marca;
+ }
+
+ public String getPlaca(){
+ return Placa;
+ }
+ public String getModelo(){
+ return Modelo;
+ }
+ //Métodos públicos para establecer los datos
+ public void setCompania(String Compania){
+ this.Compania = Compania;
+ }
+ public void setMarca(String Marca){
+ this.Marca = Marca;
+ }
+
+public void setPlaca(String Placa){
+ this.Placa = Placa;
+ }
+
+public void setModelo(int Year){
+ if(Year >= 2018) {
+ this.Modelo = "Nuevo";
+ } else if(Year < 2018 && Year>2000){
+ this.Modelo="Moderado";
+ }else if(Year < 2010){
+ this.Modelo="Viejo";
+ }
+}
+ }
+ }
