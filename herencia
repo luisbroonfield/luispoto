@@ -1,0 +1,49 @@
+package tm5;
+public class HerenciaMain {
+public static void main(String[]args){
+pres pr=newPres (2018,”andres manuel lopez obrador,”0101-1960-
+00184”,25975.22);
+printPersona(pr);
+}
+public static void printPersona(Persona p){
+System.out.println("Identificacion:"+ em.getPersonaid()); System.out.println("Nombre
+Persona:"+ em.getNombre()); System.out.println("Seguro Social:"+ em.getSeguro());
+System.out.println("Sueldo:"+ em.getSalario());
+}
+}
+package TM5;
+public class Persona {
+private int personaid; private String nombre; private String seguro; private double
+salario;
+public Persona(int empleadoid, String nombre, String seguro, double salario) {
+this.personaid = personaid; this.nombre = nombre; this.seguro = seguro;
+this.salario = salario;
+}
+public int getPersonaid() { return personaid;
+this.salario+=incremento;
+}
+}
+package TM5;
+public class Gr extends Persona{
+private Stringndpto;
+public Gr(String ndepartamento, int empleadoid, String nombre, String seguro, double
+salario) {
+super(Personaid, nombre, seguro, salario);//llamamos al constructor empleado
+this.ndpto = ndpto;
+}
+public String getNdpto() { return ndpo;
+}
+public voidsetNdpto(String ndpto){ this.ndpto =ndpnto;
+}
+}
+package TM5;
+public class Pr extendsGr{
+private double Estimacion;
+public Pr(int personaid,String nombre,String seguro,double salario,String ndpto,double
+Estimacion) {
+super(ndpo,personaid,nombre,seguro,salario); this.Estimacion =Estimacion;
+}
+publicdoublegetEstimacion(){ return Estimacion;
+}
+public void setEstimacion(double Estimacion) { this.Estimacion = Estimacion;
+}
